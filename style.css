@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9e8bb;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.game-container {
+  background-color: #374109;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid #374109;
+}
+
+h1 {
+  margin-top: 0;
+  color: #f9e8bb;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.stats {
+  background: #495128;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.scramble-box h2 {
+  font-size: 2.5rem;
+  color: #d8900a;
+  background: #2e3319;
+  padding: 15px;
+  border-radius: 10px;
+  letter-spacing: 8px;
+  margin: 20px 0;
+  text-shadow: 0 0 10px rgba(197, 129, 26, 0.3);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 2px solid #485127;
+  background: #2e3319;
+  color: white;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: #d8900a;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  width: 100%;
+  margin-top: 5px;
+}
+
+button[type="submit"] {
+  background-color: #d8900a;
+  color: #2e3319;
+}
+
+button[type="submit"]:hover {
+  background-color: #2e3319;
+  color: #d8900a;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #555 !important;
+  color:#919191 !important;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+button:not([type="submit"]) {
+  background-color: #c54b0a;
+  color: #2e3319;
+}
+
+button:not([type="submit"]):hover:not(:disabled) {
+  background-color: #6a2906;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+p {
+  font-weight: bold;
+  margin-top: 15px;
+  min-height: 1.2em;
+}
